@@ -10,7 +10,7 @@ input.onGesture(Gesture.Shake, function () {
     if (mode == 0) {
         basic.clearScreen()
         music.play(music.stringPlayable("D C F D E C E C ", 500), music.PlaybackMode.UntilDone)
-        basic.showString("" + (tekstlijst[randint(0, 3)]))
+        basic.showString("" + (tekstlijst._pickRandom()))
         basic.pause(500)
         begin = 1
     } else {
